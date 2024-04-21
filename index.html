@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web bán sách</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="./Assets/fonts/fontawesome-free-6.5.2-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="./Favicon/Favicon.jpeg" rel="shortcut icon" />
+  </head>
+  <body id="body">
+    <div id="pop-up">
+      <div>Loading</div>
+      <div id="big-circle">
+        <div class="circle">Loading</div>
+        <div class="circle">Loading</div>
+        <div class="circle">Loading</div>
+      </div>
+    </div>
+    <header>
+      <div class="firstLine-Header">
+        <div class="contact-firstLine-header">
+          <p>
+            <i class="fa-solid fa-phone" id="shaking-phone"></i> HOTLINE:
+            0938.999706
+          </p>
+        </div>
+        <p>HỖ TRỢ 24/7</p>
+        <div class="login-cart-firstLine-Header">
+          <ul>
+            <li ><a id = 'loginhead' href="./Pages/Login.html" style="text-decoration: none; color: black">Đăng nhập <i class="fa-solid fa-right-to-bracket"></i></li>
+            <li ><a id = 'regishead' href="./Pages/Register.html" style="text-decoration: none; color: black">Đăng kí <i class="fa-solid fa-registered"></i></li>
+            <li>
+              <a id="cart-movement" style="text-decoration: none; color: black">
+                Giỏ hàng</a
+              >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <div id="bought-book-quanlity"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="secondLine-Header">
+        <div class="Sach-BieuNgu-secondLine-Header">
+          <p><i class="fa-solid fa-book"></i> Thế giới sách</p>
+        </div>
+        <div class="Search-secondLine-Header">
+          <input placeholder="Tìm Kiếm" type="text" id="search" />
+          <button id="search-btn" type="button">Tìm Kiếm</button>
+        </div>
+        <div class="socialNetWorld-secondLine-Header">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="navigation">
+        <ul>
+          <li>
+            <a href="./index.html">Trang chủ</a>
+          </li>
+          <li class="cross-menu">
+            Giới thiệu
+            <div class="sub">
+              <p>Ban lãnh đạo</p>
+              <p>Lịch sử nhà sách</p>
+              <p>Đội ngũ cán bộ</p>
+            </div>
+          </li>
+          <li class="cross-menu">
+            Liên hệ
+            <div class="sub">
+              <p>Số điện thoại hotline</p>
+              <p>Email</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="moving-picture">
+        <div class="leaf"></div>
+        <img
+          src="./Assets/walkingMan.png"
+          alt="Nguoi doc sach"
+          id="walkingMan"
+        />
+      </div>
+
+      <div class="container">
+        <div id="verticalTaskBars">
+          <h2>Danh mục <i class="fa-solid fa-address-book"></i></h2>
+          <ul>
+            <li>
+              Sách kinh tế <i class="fa-solid fa-arrow-right"></i>
+              <ul class="sub-menu">
+                <li>Ngoại Thương</li>
+                <li>Marketing-Bán hàng</li>
+              </ul>
+            </li>
+            <li>
+              Sách văn học trong nước <i class="fa-solid fa-arrow-right"></i>
+              <ul class="sub-menu">
+                <li>Nhân vật văn học và nhân vật lịch sử</li>
+                <li>Phê bình văn học</li>
+              </ul>
+            </li>
+            <li>
+              Sách văn học nước ngoài <i class="fa-solid fa-arrow-right"></i>
+              <ul class="sub-menu">
+                <li>Cổ tích, thần thoại</li>
+                <li>Trinh thám</li>
+              </ul>
+            </li>
+            <li>
+              Sách thiếu nhi <i class="fa-solid fa-arrow-right"></i>
+              <ul class="sub-menu">
+                <li>Khoa học tự nhiên</li>
+                <li>Khoa học xã hội</li>
+              </ul>
+            </li>
+            <li>
+              Sách phát triển bản thân<i class="fa-solid fa-arrow-right"></i>
+              <ul class="sub-menu">
+                <li>Sách học làm người</li>
+                <li>Danh nhân</li>
+                <li>Tâm lí-Kĩ năng sống</li>
+              </ul>
+            </li>
+          </ul>
+          <div id="visual-advertisadvertisement">
+            <h2>Sách nổi bật</h2>
+            <img src="./Assets/advertisingPicture.webp" alt="Sach quang cao" />
+            <div>-10%</div>
+          </div>
+          <div id="bestseller-books">
+            <h2>
+              Sách bán chạy<i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </h2>
+          </div>
+        </div>
+        <div class="main-content" id="main-content">
+          <div id="main-picture">
+            <div>
+              <i class="fa-solid fa-arrow-left"></i>
+              <img
+                id="main-showed-picture"
+                src="./Assets/MainPictures/p1.webp"
+                alt="ChuyenPhuuLuuCuaMit"
+              />
+              <i class="fa-solid fa-arrow-right right"></i>
+              <div class="index-images">
+                <div class="index-item active"></div>
+                <div class="index-item"></div>
+                <div class="index-item"></div>
+                <div class="index-item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact ">
+          <div class="contact Zalo">
+            <img src="./Assets/Icons/icons8-zalo-100.png" alt="Zalo" />
+          </div>
+          <div class="contact Tik-Tok">
+            <img src="./Assets/Icons/icons8-tik-tok-100.png" alt="Tik Tok" />
+          </div>
+          <div class="contact message">
+            <img src="./Assets/Icons/icons8-message-100.png" alt="message" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="email">
+        <div class="label-email">
+          <h3>ĐĂNG KÍ NHẬN EMAIL</h3>
+          <p1>Đăng kí nhận thông tin sách mới, sách bán</p1>
+        </div>
+        <div class="input-btn-email">
+          <input type="text" placeholder="Nhập email" />
+          <button>Đăng ký ngay</button>
+        </div>
+      </div>
+      <div class="imformation">
+        <div class="">
+          <h4>Hỗ trợ khách hàng</h4>
+          <ul>
+            <li>Email: sale.nobita@gmail.com</li>
+            <li>Hotline: 0938 424 289</li>
+          </ul>
+        </div>
+        <div class="">
+          <h4>Giới thiệu</h4>
+          <ul>
+            <li>Địa chỉ: Linh Trung, Thủ Đức, TPHCM</li>
+            <li>Tuyển dụng</li>
+          </ul>
+        </div>
+        <div class="">
+          <h4>Tài khoản</h4>
+          <ul>
+            <li>Đăng nhập</li>
+            <li>Quên pass</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./Scripts/main.js" type="module"></script>
+  </body>
+</html>

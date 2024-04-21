@@ -1,0 +1,33 @@
+img {
+  height: 300px;
+  width: 250px;
+}
+#main-page {
+  flex: 1 400px;
+  display: flex;
+}
+#main-page div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+}
+.contact:hover {
+  width: 280px;
+  background-color: greenyellow;
+}
+
+.Zalo {
+  top: 30%;
+}
+.Tik-Tok {
+  top: 40%;
+}
+.message {
+  top: 50%;
+}
+.contact img {
+  width: 100px;
+  height: 100px;
+}

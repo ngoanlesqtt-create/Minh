@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "header": "Sách kinh điển",
+    "books": []
+  },
+  {
+    "id": 2,
+    "header": "Sách tâm lý-kỹ năng sống",
+    "books": []
+  },
+  {
+    "id": 3,
+    "header": "Sách văn học",
+    "books": []
+  },
+  {
+    "id": 4,
+    "header": "Lịch sử",
+    "books": []
+  },
+  {
+    "id": 5,
+    "header": "Sách bán chạy",
+    "books": []
+  }
+]

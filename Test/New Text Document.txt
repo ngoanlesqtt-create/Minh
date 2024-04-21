@@ -1,0 +1,11 @@
+- cài git
++ git init (vào trong folder chứa đồ án)
++ git remote add origin https://github.com/ngoanlesqtt-create/DoAn.git
++ chuột phải vô folder để mở git gui
++ bấm rescan
++ bấm stage changed (tương đương với lệnh git add . :đưa hết những thay đổi trong máy vào thùng chứa)
++ bấm commit (tương đương với lệnh git commit -M "nội dung commit":dán nhãn vô thùng)
++ bấm push tương đương với git push -u origin main (đẩy cả thùng vào kho)
+
+- Muốn lấy cả responsitory thì chạy lệnh git clone https://github.com/ngoanlesqtt-create/DoAn.git
+- Muốn lấy những thay đổi ở trên github thì chạy lệnh git pull

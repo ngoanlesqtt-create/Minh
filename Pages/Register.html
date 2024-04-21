@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../Styles/Register.css" />
+    <link href="../Favicon/Favicon.jpeg" rel="shortcut icon" />
+    <link rel="stylesheet" href="../Assets/fonts/fontawesome-free-6.5.2-web/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="../Assets/fonts/fontawesome-free-6.5.2-web/css/all.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <div class="firstLine-Header">
+            <div class="contact-firstLine-header">
+                <p><i class="fa-solid fa-phone"></i> HOTLINE: 0938.999706</p>
+            </div>
+            <p>HỖ TRỢ 24/7</p>
+            <div class="login-cart-firstLine-Header">
+                <ul>
+                    <li><a href="Login.html" style="text-decoration: none; color: black">Đăng nhập</a><i
+                            class="fa-solid fa-right-to-bracket"></i></li>
+                    <li style="color: blue">Đăng ký <i class="fa-solid fa-registered"></i></li>
+                    <li>
+                        <a href="Cart.html" style="text-decoration: none; color: black">
+                            Giỏ hàng</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div id="bought-book-quanlity"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="secondLine-Header">
+            <div class="Sach-BieuNgu-secondLine-Header">
+                <p><a href="../index.html">Thế giới sách</a></p>
+            </div>
+            <div class="Search-secondLine-Header">
+                <input placeholder="Tìm Kiếm" type="text" id="search" />
+                <button id="search-btn" type="button">Tìm Kiếm</button>
+            </div>
+            <div class="socialNetWorld-secondLine-Header">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <ul>
+            <li><a href="../index.html" style="text-decoration: none; color: black">Trang chủ/</a><span>Đăng Ký</span>
+            </li>
+        </ul>
+        <!----------------------------- Form box ----------------------------------->
+        <div class="form-box">
+            <div class="login-container" id="login">
+                <div class="top">
+                    <label class="logheader">Đăng Ký</label>
+                    <form id="formId" method="POST" name="registration">
+                        <div class="input-box">
+                            <input type="text" class="input-field" placeholder="Tên Đăng Nhập" id="uName">
+                            <i class="bx bx-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" class="input-field" placeholder="Email" id="uEmail">
+                            <i class="bx bx-envelope"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Mật Khẩu" id="uPassword">
+                            <i class="bx bx-lock-alt"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit" value="Đăng Ký">
+                        </div>
+                    </form>
+                    <div class="two-col">
+                        <div class="one">
+                            <label>Đã có tài khoản? <a href="Login.html" style="color: blue">Vào đăng nhập</a></label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </main>
+    <script src="../Scripts/Register.js"></script>
+</body>

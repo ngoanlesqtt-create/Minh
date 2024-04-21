@@ -1,0 +1,696 @@
+body {
+  background-color: rgb(252, 248, 243);
+  margin: 0px;
+}
+main {
+  margin-bottom: 50px;
+  padding-top: 145px;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.firstLine-Header {
+  background-color: rgb(243, 234, 234);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-firstLine-header {
+  display: flex;
+}
+.contact-firstLine-header img {
+  width: 40px;
+  margin: 10px;
+}
+.contact-firstLine-header p i {
+  color: black;
+}
+.login-cart-firstLine-Header ul {
+  list-style-type: none;
+  display: flex;
+  width: 300px;
+}
+.login-cart-firstLine-Header ul li {
+  text-align: center;
+}
+.login-cart-firstLine-Header ul li {
+  margin-left: 10px;
+}
+.login-cart-firstLine-Header ul li:last-child {
+  position: relative;
+}
+.secondLine-Header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 1px grey;
+  background-color: white;
+}
+.socialNetWorld-secondLine-Header i:hover {
+  padding: 30px;
+  transform: scale(2);
+  transition: all 0.5s;
+}
+.Sach-BieuNgu-secondLine-Header {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.Sach-BieuNgu-secondLine-Header img {
+  height: 50px;
+}
+.Sach-BieuNgu-secondLine-Header p {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 1px 1px red;
+  cursor: pointer;
+  animation: floating 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes floating {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+.fa-facebook {
+  color: blue;
+}
+.fa-twitter {
+  color: white;
+  background-color: rgb(129, 116, 243);
+}
+.fa-instagram {
+  color: pink;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-brands {
+  transition-property: width;
+  transition-duration: 5ms;
+  transition-timing-function: ease-in-out;
+}
+.fa-brands:hover {
+  height: 20px;
+}
+.fa-solid {
+  color: orange;
+}
+.fa-solid:hover {
+  color: grey;
+}
+.fa-star {
+  color: yellow;
+}
+.Search-secondLine-Header {
+  display: flex;
+  align-items: center;
+}
+.Search-secondLine-Header img {
+  height: 20px;
+  margin-left: 20px;
+}
+#navigation {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(247, 216, 216);
+  color: white;
+}
+#navigation ul {
+  list-style-type: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+#navigation ul li {
+  text-align: center;
+}
+
+#pop-up {
+  position: fixed;
+  width: 600px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  left: 35%;
+  top: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid peru;
+  z-index: 1;
+  background-color: yellowgreen;
+}
+#pop-up > div:first-child {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0%;
+  background-color: orange;
+  height: 60px;
+}
+#big-circle {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  border-top-color: blue;
+  border-bottom-color: red;
+  border-left-color: yellow;
+  display: flex;
+  align-items: center;
+  animation: gyrate 1s linear infinite;
+  background-color: orange;
+  color: white;
+}
+@keyframes gyrate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#verticalTaskBars {
+  width: 200px;
+  margin-left: 40px;
+  background-color: white;
+  width: auto;
+  margin-top: 30px;
+  height: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  border: 5px solid orange;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  width: 100%;
+}
+.sub-menu {
+  display: none;
+  background-color: white;
+  width: 250px;
+  border: 2px solid rgb(202, 197, 197);
+  padding-top: 5px;
+}
+.sub-menu li {
+  margin-top: 10px;
+}
+#verticalTaskBars ul li {
+  height: 30px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#verticalTaskBars ul {
+  padding-right: 30px;
+}
+#verticalTaskBars ul li:hover > .sub-menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 280px;
+  border-color: aquamarine;
+  border-radius: 20px;
+  z-index: 1;
+  color: black;
+}
+#verticalTaskBars h2 {
+  text-align: center;
+}
+
+li:hover {
+  color: silver;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#search-btn {
+  background-color: black;
+  color: white;
+  height: 36px;
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+#search:hover {
+  border-color: green;
+}
+#search {
+  width: 400px;
+  height: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.imformation {
+  display: flex;
+  justify-content: space-around;
+}
+footer div ul {
+  padding-left: 0px;
+}
+.email {
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.label-email {
+  color: white;
+  margin-top: 15;
+}
+.label-email h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.input-btn-email input {
+  width: 350px;
+  height: 30px;
+}
+.input-btn-email button {
+  width: 100px;
+  height: 30px;
+  color: orange;
+  background-color: white;
+  border-color: orange;
+}
+#bestseller-books {
+  width: 350px;
+  margin-bottom: 50px;
+}
+.bestseller-pictures {
+  width: 50px;
+  height: fit-content;
+}
+.imformation-bestseller-books {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  height: 120px;
+  position: relative;
+}
+
+.imformation-bestseller-books div:last-child {
+  display: flex;
+  flex-direction: column;
+  height: 84px;
+  justify-content: center;
+  align-items: center;
+}
+.imformation-bestseller-books div:last-child button {
+  background-color: green;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.imformation-bestseller-books div:last-child button:hover {
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+.imformation-bestseller-books div:last-child button:last-child {
+  margin-top: 10px;
+}
+.bestSellerContent {
+  width: 250px;
+  margin-left: 10px;
+}
+.main-content {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+.main-content img {
+  width: 1000px;
+  height: 600px;
+}
+.main-content i:first-child {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: black;
+}
+.right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: black;
+}
+#main-picture {
+  position: relative;
+}
+#main-picture p {
+  text-align: center;
+}
+.index-images {
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+}
+.index-item {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.active {
+  background-color: white;
+}
+.book-topics {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.book-topics h1 {
+  text-align: center;
+}
+
+.book-topic-images {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 300px;
+  width: 1000px;
+  position: relative;
+  border-radius: 20px;
+  border: 5px solid orange;
+  background-image: url(./Assets/hinh-nen-giang-sinh-35.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.book-topic-images div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.book-topic-images div p {
+  margin-top: 0px;
+}
+.book-topic-images img {
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+}
+.subDivTags {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 150px;
+  margin-bottom: 50px;
+}
+.subDivTags:hover,
+.imformation-bestseller-books:hover {
+  box-shadow: 10px 10px 10px 10px;
+}
+.book-names {
+  text-align: center;
+  cursor: pointer;
+}
+#bought-book-quanlity {
+  height: 20px;
+  background-color: white;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 90px;
+  border-radius: 50%;
+}
+input {
+  height: 10px;
+  width: 30px;
+  text-align: center;
+  border: 1px dashed orange;
+}
+.bookFunction {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1%;
+}
+
+.bookFunction button {
+  width: 90px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(111, 206, 162);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#navigation ul li a:hover {
+  color: grey;
+}
+#visual-advertisadvertisement {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+#visual-advertisadvertisement img {
+  cursor: pointer;
+  width: 300px;
+}
+#visual-advertisadvertisement img:hover {
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+#visual-advertisadvertisement::after,
+.subDivTags::after,
+.imformation-bestseller-books::after {
+  width: 0px;
+  background-color: white;
+  height: 0px;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  content: "";
+  transition-property: width, background-color, height;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+#visual-advertisadvertisement:hover::after,
+.subDivTags:hover::after,
+.imformation-bestseller-books:hover:after {
+  background-color: yellowgreen;
+  width: 100%;
+  height: 10px;
+}
+#visual-advertisadvertisement div {
+  position: absolute;
+  top: 13%;
+  right: 7%;
+  background-color: red;
+  color: white;
+  width: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact {
+  position: fixed;
+  right: 0;
+  transition-property: width, background-color;
+  transition-duration: 3s, 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.contact:hover {
+  width: 280px;
+  background-color: greenyellow;
+}
+.Zalo {
+  top: 30%;
+}
+.Tik-Tok {
+  top: 40%;
+}
+.message {
+  top: 50%;
+}
+#shaking-phone {
+  animation-name: shake;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+#moving-picture {
+  position: relative;
+  margin-top: 10px;
+  height: 400px;
+  background-image: url(./Assets/MuaThu.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-top: 0px;
+}
+#moving-picture #walkingMan {
+  position: absolute;
+  bottom: 0;
+  animation-name: moving;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  height: 100px;
+}
+.leaf {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  background-image: url(./Assets/la.png);
+  background-size: cover;
+  animation: animationSnow 4s ease-in-out infinite;
+}
+@keyframes animationSnow {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(100px, 50vh);
+  }
+}
+@keyframes moving {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 10%;
+  }
+  20% {
+  }
+  30% {
+    left: 30%;
+  }
+  40% {
+    left: 40%;
+  }
+  50% {
+    left: 50%;
+  }
+  60% {
+    left: 60%;
+  }
+  70% {
+    left: 70%;
+  }
+  80% {
+    left: 80%;
+  }
+  90% {
+    left: 90%;
+  }
+  100% {
+    left: 95%;
+  }
+}
+h2,
+h1 {
+  cursor: pointer;
+}
+ul li:hover,
+h1:hover,
+h2:hover {
+  text-shadow: 0px 5px 5px #c2b3b3;
+}
+.cross-menu {
+  position: relative;
+}
+.sub {
+  display: none;
+}
+.cross-menu:hover .sub {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(247, 216, 216);
+  z-index: 1;
+  top: 100%;
+  left: 36%;
+  color: black;
+  border-radius: 20px;
+}
+
+.cross-menu:hover .sub p:hover {
+  color: orange;
+}
